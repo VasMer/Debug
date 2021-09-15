@@ -3,7 +3,8 @@
 #include <DebugUtil.h>
 #include <Arduino.h>
 
-void setup() {
+void setup()
+{
   //#ifdef DEBUG
   Serial.begin(9600);
   //#endif
@@ -11,7 +12,8 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void blink(){
+void blink()
+{
   digitalWrite(LED_BUILTIN, HIGH);
   DEB("On");
   delay(1000);
@@ -24,5 +26,5 @@ void loop()
 {
   blink();
 
-  Serial.println("Cycle complete.");
+  //Serial.println("Cycle complete.");
 }
